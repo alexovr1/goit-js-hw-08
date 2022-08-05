@@ -12,7 +12,9 @@ refs.form.addEventListener('input', throttle(onInputText, 500));
 refs.form.addEventListener('submit', onClickSubmit);
 
 // ----- Replace empty string in form from memory-----
-pasrefeedbackMemoryObj();
+if (parsedfeedbackMemoryObj) {
+    pasrefeedbackMemoryObj();
+};
 
 // ----- Save value form`s fields in memory-----`
 function onInputText(e) {
