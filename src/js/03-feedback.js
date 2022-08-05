@@ -34,6 +34,7 @@ function pasrefeedbackMemoryObj() {
         if (parsedfeedbackMemoryObj) {
             refs.email.value = parsedfeedbackMemoryObj.email;
             refs.message.value = parsedfeedbackMemoryObj.message;
+            return parsedfeedbackMemoryObj;
         }
 
     } catch (error) {
@@ -41,7 +42,7 @@ function pasrefeedbackMemoryObj() {
         console.log(error.message);
     }
 
-    return parsedfeedbackMemoryObj;
+
 }
 
 // ----- Clear form`s fields and memory and consoling value-----
