@@ -39,9 +39,8 @@ function pasrefeedbackMemoryObj() {
         }
 
     } catch (error) {
+        console.log(error.message);
     }
-
-
 }
 
 // ----- Clear form`s fields and memory and consoling value-----
