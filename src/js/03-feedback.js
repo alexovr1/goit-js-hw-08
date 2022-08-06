@@ -31,7 +31,7 @@ function pasrefeedbackMemoryObj() {
     const feedbackMemoryObj = localStorage.getItem("feedback-form-state");
 
     try {
-        parsedfeedbackMemoryObj = JSON.parse(feedbackMemoryObj);
+        const parsedfeedbackMemoryObj = JSON.parse(feedbackMemoryObj);
         if (parsedfeedbackMemoryObj) {
             refs.email.value = parsedfeedbackMemoryObj.email;
             refs.message.value = parsedfeedbackMemoryObj.message;
