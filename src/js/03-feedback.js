@@ -12,9 +12,8 @@ refs.form.addEventListener('input', throttle(onInputText, 500));
 refs.form.addEventListener('submit', onClickSubmit);
 
 // ----- Replace empty string in form from memory-----
-if (parsedfeedbackMemoryObj) {
-    pasrefeedbackMemoryObj();
-};
+pasrefeedbackMemoryObj();
+
 
 // ----- Save value form`s fields in memory-----`
 function onInputText(e) {
@@ -40,8 +39,6 @@ function pasrefeedbackMemoryObj() {
         }
 
     } catch (error) {
-        console.log(error.name);
-        console.log(error.message);
     }
 
 
